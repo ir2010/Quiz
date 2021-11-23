@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:animateLayoutChanges="true"
+    android:layout_below="@id/tvTitle"
+    android:gravity="center_vertical"
+    android:layout_marginStart="32dp"
+    android:layout_marginEnd="32dp"
+    android:layout_marginBottom="200dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputOTP"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter OTP received on your phone"
+        android:textColorHint="@color/secondaryTextColor"
+        app:boxCornerRadiusBottomEnd="24dp"
+        app:boxCornerRadiusBottomStart="24dp"
+        app:boxCornerRadiusTopEnd="24dp"
+        app:boxCornerRadiusTopStart="24dp"
+        app:boxStrokeColor="@color/secondaryTextColor"
+        app:boxStrokeWidth="1dp"
+        app:endIconDrawable="@drawable/ic_baseline_arrow_forward_24"
+        app:startIconTint="@color/message_text_grey"
+        app:endIconMode="custom"
+        app:endIconTint="@color/primaryTextColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:maxLines="1"
+            android:inputType="number"
+            android:maxLength="6"
+            android:imeOptions="actionDone"
+            android:letterSpacing=".8"
+            android:textColor="@color/primaryTextColor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ProgressBar
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:id="@+id/verificationPagePb"
+        android:elevation="8dp"
+        android:layout_below="@+id/inputOTP"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:indeterminateTint="@color/PrimaryVariant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

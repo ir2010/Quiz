@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="12dp">
+
+                        <RelativeLayout
+                            android:id="@+id/class11e"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:onClick="openClass"
+                            android:tag="11e">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/c11e"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginStart="2dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:backgroundTint="@color/OnPrimary"
+                                android:text="Class 11 Materials (English)"
+                                android:textAlignment="center"
+                                android:textColor="@color/OnSecondary" />
+
+                            <ImageView
+                                android:id="@+id/c11e"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="15dp"
+                                app:srcCompat="@drawable/teaching" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="12dp">
+
+                        <RelativeLayout
+                            android:id="@+id/class11h"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:onClick="openClass"
+                            android:tag="11h">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/c11h"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginStart="2dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:backgroundTint="@color/OnPrimary"
+                                android:text="Class 11 Materials (Hindi)"
+                                android:textAlignment="center"
+                                android:textColor="@color/OnSecondary" />
+
+                            <ImageView
+                                android:id="@+id/c11h"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="15dp"
+                                app:srcCompat="@drawable/teaching" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="12dp">
+
+                        <RelativeLayout
+                            android:id="@+id/class12e"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:onClick="openClass"
+                            android:tag="12e">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/c12e"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginStart="2dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:backgroundTint="@color/OnPrimary"
+                                android:tag="12e"
+                                android:text="Class 12 Materials (English)"
+                                android:textAlignment="center"
+                                android:textColor="@color/OnSecondary" />
+
+                            <ImageView
+                                android:id="@+id/c12e"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="15dp"
+                                app:srcCompat="@drawable/teaching" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="12dp">
+
+                        <RelativeLayout
+                            android:id="@+id/class12h"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:onClick="openClass"
+                            android:tag="12h">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/c12h"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginStart="2dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:backgroundTint="@color/OnPrimary"
+                                android:tag="12h"
+                                android:text="Class 12 Materials (Hindi)"
+                                android:textAlignment="center"
+                                android:textColor="@color/OnSecondary" />
+
+                            <ImageView
+                                android:id="@+id/c12h"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="15dp"
+                                app:srcCompat="@drawable/teaching" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="12dp">
+
+                        <RelativeLayout
+                            android:id="@+id/iitjee"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:onClick="openClass"
+                            android:tag="jee">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/jee"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginStart="2dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:backgroundTint="@color/OnPrimary"
+                                android:tag="jee"
+                                android:text="JEE (Main+Adv.) Materials"
+                                android:textAlignment="center"
+                                android:textColor="@color/OnSecondary" />
+
+                            <ImageView
+                                android:id="@+id/jee"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="15dp"
+                                app:srcCompat="@drawable/teaching" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="12dp">
+
+                        <RelativeLayout
+                            android:id="@+id/liveclass"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:onClick="openclass">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/live"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:backgroundTint="@color/OnPrimary"
+                                android:tag="3"
+                                android:text="Live Class"
+                                android:textAlignment="center"
+                                android:textColor="@color/OnSecondary" />
+
+                            <ImageView
+                                android:id="@+id/live"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="15dp"
+                                app:srcCompat="@drawable/teaching" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="12dp">
+
+                        <RelativeLayout
+                            android:id="@+id/doubtsession"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:onClick="opendoubt">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/doubt"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:backgroundTint="@color/OnPrimary"
+                                android:tag="2"
+                                android:text="Personal Doubt Sessions"
+                                android:textAlignment="center"
+                                android:textColor="@color/OnSecondary" />
+
+                            <ImageView
+                                android:id="@+id/doubt"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="15dp"
+                                app:srcCompat="@drawable/teaching" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="12dp">
+
+                        <RelativeLayout
+                            android:id="@+id/questions"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:onClick="openquestion">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/ques"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:backgroundTint="@color/OnPrimary"
+                                android:tag="4"
+                                android:text="Practice Questions"
+                                android:textAlignment="center"
+                                android:textColor="@color/OnSecondary" />
+
+                            <ImageView
+                                android:id="@+id/ques"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="15dp"
+                                app:srcCompat="@drawable/teaching" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="12dp">
+
+                        <RelativeLayout
+                            android:id="@+id/textbook"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:onClick="opentextbook">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/text"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginStart="2dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:backgroundTint="@color/OnPrimary"
+                                android:tag="text"
+                                android:text="Textbooks"
+                                android:textAlignment="center"
+                                android:textColor="@color/OnSecondary" />
+
+                            <ImageView
+                                android:id="@+id/text"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="15dp"
+                                app:srcCompat="@drawable/teaching" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
